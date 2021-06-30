@@ -1,0 +1,115 @@
+@import "../resets";
+
+.portfolio{
+    position: relative;
+    width: 100%;
+    padding: 4em 0;
+    @include flexit(center, center, column);
+
+    @include introcss;
+    .intro{
+        margin-bottom: 0;
+    }
+
+    .gallery-navigation-btns{
+        position: relative;
+        width: 100%;
+        @include flexit(center, center);
+        column-gap: 0.7em;
+        margin: 1em 0;
+
+        .gnb{
+            outline: none;
+            border: none;
+            background: transparent;
+            @include opensans(500);
+            font-size: 1em;
+            width: 4.5em;
+            height: 3em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover{
+                color: lighten($bluecolor, 10%);
+            }
+        }
+    }
+
+    .gallery{
+        position: relative;
+        width: 70em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1em;
+
+        .card{
+            position: relative;
+            width: 30%;
+            @include flexit(center, center);
+            transition: all 1s ease;
+
+            img{
+                position: relative;
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+
+            .popup{
+                position: absolute;
+                width: 90%;
+                bottom: 0;
+                @include flexit(center, space-between);
+                padding: 1.5em 2em;
+                margin: 1em 0;
+                border-radius: 7px;
+                transform: translateY(20%);
+                transition: all 0.5s ease;
+                opacity: 0;
+                
+                span:nth-of-type(1){
+                    position: relative;
+                    display: block;
+
+                    h3{
+                        color: #fff;
+                        @include roboto(500);
+                        font-size: 1em;
+                    }
+                    h4{
+                        color: #fff;
+                        @include roboto(300);
+                        font-size: 0.9em;
+                    }
+                }
+
+                span:nth-of-type(2){
+                    position: relative;
+                    display: block;
+
+                    button{
+                        outline: none;
+                        border: none;
+                        background: transparent;
+                        color: #fff;
+                        font-size: 1.2em;
+                        margin: 0 0.5em;
+                        cursor: pointer;
+                    }
+                    button:nth-of-type(2){
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            &:hover{
+                .popup{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}
