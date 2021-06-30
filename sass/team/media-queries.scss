@@ -1,0 +1,56 @@
+@import "../resets";
+
+@media only screen and (max-width: 1200px){
+    .team-container{
+        .intro{
+            padding: 0 15em;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .team-container{
+        .intro{
+            padding: 0 5em;
+            gap: 0.3em;
+
+            h2{
+                font-size: 1.5em !important;
+            }
+            h4{
+                font-size: 0.9em !important;
+            }
+        }
+
+        .team-gallery{
+            .card{
+                .info{
+                    padding: 0.8em 1.5em;
+                }
+                .btns-container{
+                    opacity: 1;
+                    bottom: 20%;
+                    column-gap: 0.7em;
+
+                }
+                &:hover{
+                    .btns-container{
+                        bottom: 20%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+
+    .team-container{
+        padding: 2em 0;
+
+        .intro{
+            padding: 0 1em;
+        }
+    }
+
+}
