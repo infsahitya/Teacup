@@ -1,0 +1,175 @@
+@import "../resets";
+
+.footer{
+    position: relative;
+    width: 100%;
+
+    .sub-container{
+        position: relative;
+        width: 100%;
+        padding: 3.5em 1em;
+        @include flexit(center, center, column, nowrap);
+
+        h2{
+            @include roboto(700);
+            font-size: 1.5em;
+        }
+
+        h4{
+            @include opensans(400);
+            font-size: 1em;
+            margin: 1em 0 1.5em 0;
+            text-align: center;
+        }
+
+        .form-box{
+            position: relative;
+            width: 35em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            form{
+                position: relative;
+                width: 100%;
+                @include flexit(center, center);
+
+                input[type="email"]{
+                    width: 75%;
+                    padding: 0.5em 1.2em;
+                    @include opensans(400);
+                    font-size: 1em;
+                    outline: none;
+                    border: none;
+                    color: #000;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+                input[type="submit"]{
+                    width: 25%;
+                    padding: 0.5em 1.2em;
+                    @include opensans(400);
+                    font-size: 1em;
+                    outline: none;
+                    border: none;
+                    color: #fff;
+                    background-color: $bluecolor;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    cursor: pointer;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .link-container{
+        position: relative;
+        width: 100%;
+        @include flexit(center, center, row, wrap);
+        padding: 4em 0;
+
+        .link-box{
+            position: relative;
+            width: 17em;
+            padding: 0 2em;
+
+            h2{
+                @include roboto(700);
+                font-size: 1.8em;
+                
+                span{
+                    color: lighten($bluecolor, 10%);
+                }
+            }
+            h4{
+                @include opensans(400);
+                font-size: 0.9em;
+            }
+            h4:nth-of-type(1){
+                margin: 1.5em 0;
+            }
+
+            h3{
+                @include roboto(500);
+                font-size: 1em;
+                margin-bottom: 1em;
+            }
+
+            ul{
+                list-style-image: url("../../../svg/arrow-right.svg");
+                margin-left: 1em;
+
+                li{
+                    margin-bottom: 0.5em;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        @include opensans(400);
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+        .social-box{
+            h3{
+                @include roboto(500);
+                font-size: 1.2em;
+            }
+            h4{
+                margin: 1em 0 !important;
+                color: darken($white, 20%);
+                @include opensans(400);
+            }
+
+            ul{
+                list-style-image: none !important;
+                list-style-type: none;
+                margin-bottom: 0;
+                margin-left: 0;
+
+                li{
+                    float: left;
+
+                    a{
+                        button{
+                            outline: none;
+                            border: none;
+                            background-color: rgba($bluecolor, 1);
+                            color: $white;
+                            font-size: 1em;
+                            width: 2.5em;
+                            height: 2.5em;
+                            border-radius: 5px;
+                            transition: all 0.3s ease;
+                            cursor: pointer;
+                            margin-right: 1em;
+                        }
+                    }
+                }
+
+                li:last-child{
+                    a{
+                        button{
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copy-container{
+        position: relative;
+        width: 100%;
+        @include flexit(center, center);
+        padding: 1.5em 0;
+        column-gap: 40em;
+
+        h4{
+            @include opensans(400);
+
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
