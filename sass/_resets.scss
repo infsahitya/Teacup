@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+$bluecolor: #106EEA;
+
+$darkbg : hsl(0, 0%, 6%);
+$subdarkbg : hsl(0, 0%, 9%);
+$white : #fff; /**for white text on dark background**/
+
+$lightbg : #fff;
+$sublightbg : #f6f9fe;
+$black : #000; /**for black text on light background**/
+
+@mixin poppins($font_weight){
+    font-family: 'Poppins', sans-serif;
+    font-weight: $font_weight;
+}
+
+@mixin opensans($font_weight){
+    font-family: 'Open Sans', sans-serif;
+    font-weight: $font_weight;
+}
+
+@mixin roboto($font_weight){
+    font-family: 'Roboto', sans-serif;;
+    font-weight: $font-weight;
+}
+
+@mixin flexit($align_items, $justify_content, $flex_direction: row, $flex_wrap: nowrap) {
+    
+    display: flex;
+    align-items: $align_items;
+    justify-content: $justify_content;
+    flex-flow: $flex_direction $flex_wrap;
+
+}
+
+
+@mixin introcss{
+    .intro{
+        position: relative;
+        width: 100%;
+        padding: 0 25em;
+        gap: 0.5em;
+        @include flexit(center, center, column, nowrap);
+
+        > span{
+            position: relative;
+            padding: 5px 15px;
+            @include roboto(500);
+            border-radius: 20px;
+            background-color: rgba(16, 110, 234, 0.1);
+            color: $bluecolor;
+            font-size: 1em;
+            letter-spacing: 0.05em;
+        }
+        h2{
+            @include roboto(700);
+            font-size: 2em;
+            text-align: center;
+        }
+        h4{
+            @include opensans(400);
+            font-size: 1em;
+            font-size: 1em;
+            text-align: center;
+        }
+    }
+}
+
+@mixin lightmode_introcss{
+    .intro{
+        h2{
+            color: $black;
+            span{
+                color: $bluecolor;
+            }
+        }
+        h4{
+            color: $black;
+        }
+    }
+}
+
+@mixin darkmode_introcss{
+    .intro{
+        h2{
+            color: $white;
+            span{
+                color: lighten($bluecolor, 10%);
+            }
+        }
+        h4{
+            color: $white;
+        }
+    }
+}
