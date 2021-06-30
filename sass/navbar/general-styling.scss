@@ -1,0 +1,191 @@
+@import "../resets";
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 6em;
+    top: 0;
+    transition: all 0.5s ease;
+    z-index: 100;
+    box-shadow: 0;
+    
+    @include flexit(center, center);
+    column-gap: 10em;
+
+    .title{
+        position: relative;
+        font-size: 1em;
+
+        h1{
+            @include poppins(500);
+            span{
+                color: $bluecolor;
+            }
+        }
+    }
+
+    .menu{
+        position: relative;
+
+        .nav-link{
+            position: relative;
+            display: block;
+            cursor: pointer;
+            text-decoration: none;
+            @include opensans(400);
+            padding: 8px 5px;
+            margin: 0 10px;
+            font-size: 1em;
+            outline: none;
+            border: none;
+            transition: all 0.3s ease;
+
+            hr{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                border: none;
+                height: 2px;  
+                background-color: $bluecolor; 
+                transition: all 0.3s ease;
+            }
+
+            &:hover{
+                color: $bluecolor;
+                hr{
+                    width: 100%;
+                }
+            }
+
+        }
+        .nav-link.active{
+            color: $bluecolor;
+            hr{
+                width: 100%;
+            }
+        }
+
+        @include flexit(center, center);
+    }
+
+    button{
+        position: absolute;
+        padding: 0.5em;
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        outline: none;
+        font-size: 1.5em;
+        right: 0;
+        margin-right: 1em;
+        cursor: pointer;
+        display: none;
+    }
+
+}
+
+.smaller-menu-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+    transition: all 0.5s ease;
+
+    .smaller-menu-wrapper{
+        position: relative;
+        width: 85%;
+        height: 90%;
+        @include flexit(center, flex-start, column);
+        padding-top: 3em;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+        transition: all 0.5s ease;
+
+        #menu-close-btn{
+            position: absolute;
+            width: 1.5em;
+            height: 1.5em;
+            top: 0;
+            right: 0;
+            border: none;
+            outline: none;
+            border-top-right-radius: 10px;
+            font-size: 1.3em;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .section-links{
+            position: relative;
+            width: 100%;
+
+            a{
+                display: block;
+                width: 100%;
+                text-decoration: none;
+                @include flexit(center, center, column);
+                padding: 0.8em 0;
+                font-size: 0.75em;
+
+                h2{
+                    @include roboto(300);
+                }
+            }
+            a:first-of-type{
+                border-top: none;
+            }
+            a:last-of-type{
+                border-bottom: none;
+            }
+        }
+
+        .social-links{
+            position: relative;
+            width: 100%;
+            @include flexit(center, center);
+            gap: 0.7em;
+            padding-top: 1.2em;
+
+            a{
+                display: block;
+                text-decoration: none;
+
+                button{
+                    width: 2em;
+                    height: 2em;
+                    font-size: 1em;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    background-color: $bluecolor;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .footer{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            @include flexit(center, center, column);
+            font-size: 0.8em;
+            padding-bottom: 1em;
+
+            h3{
+                @include roboto(300);
+
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.smaller-menu-container.active{
+    @include flexit(center, center);
+}
