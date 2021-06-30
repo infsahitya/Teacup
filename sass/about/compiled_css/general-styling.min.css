@@ -1,1 +1,406 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");.about-container{position:relative;width:100%;padding-top:4em}.about-container .upper-section{position:relative;width:100%}.about-container .upper-section .intro{position:relative;width:100%;padding:0 25em;gap:0.5em;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column nowrap;flex-flow:column nowrap}.about-container .upper-section .intro>span{position:relative;padding:5px 15px;font-family:'Roboto', sans-serif;font-weight:500;border-radius:20px;background-color:rgba(16,110,234,0.1);color:#106EEA;font-size:1em;letter-spacing:0.05em}.about-container .upper-section .intro h2{font-family:'Roboto', sans-serif;font-weight:700;font-size:2em;text-align:center}.about-container .upper-section .intro h4{font-family:'Open Sans', sans-serif;font-weight:400;font-size:1em;font-size:1em;text-align:center}.about-container .upper-section .intro{margin-bottom:2em}.about-container .upper-section .about{position:relative;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap}.about-container .upper-section .about img{position:relative;width:33em;height:33em;border-radius:5px}.about-container .upper-section .about .about-caption-container{position:relative;width:33em;height:33em;padding-left:1.5em;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column nowrap;flex-flow:column nowrap}.about-container .upper-section .about .about-caption-container h2{font-family:'Roboto', sans-serif;font-weight:600;font-size:1.5em}.about-container .upper-section .about .about-caption-container h4{font-family:'Open Sans', sans-serif;font-weight:300;font-size:1em;font-style:italic;margin-top:0.5em}.about-container .upper-section .about .about-caption-container .card{position:relative;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap}.about-container .upper-section .about .about-caption-container .card span{position:relative;width:3.4em;height:3.4em;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;font-size:1.3em;border-radius:50%}.about-container .upper-section .about .about-caption-container .card .txt{position:relative;width:calc(100% - 3.5em);padding:0 1em}.about-container .upper-section .about .about-caption-container .card .txt h3{font-family:'Roboto', sans-serif;font-weight:500;font-size:1.1em;margin-bottom:0.3em}.about-container .upper-section .about .about-caption-container .card .txt p{font-family:'Open Sans', sans-serif;font-weight:300;font-size:1em}.about-container .upper-section .about .about-caption-container .card:nth-of-type(1){margin-top:4em;margin-bottom:1.25em}.about-container .upper-section .about .about-caption-container .card:nth-of-type(2){margin-top:1.25em;margin-bottom:4em}.about-container .upper-section .about .about-caption-container p{font-family:'Open Sans', sans-serif;font-weight:300;font-size:1em}.about-container .lower-section{position:relative;width:100%}.about-container .lower-section .stats-container{position:relative;width:100%;margin-top:4em}.about-container .lower-section .stats-container .progress-bars-container{position:relative;padding:4em 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;gap:2em 2.5em}.about-container .lower-section .stats-container .progress-bars-container .progress-bar{position:relative;width:33em;height:2.5em}.about-container .lower-section .stats-container .progress-bars-container .progress-bar .info{position:relative;width:100%;height:60%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;font-family:'Poppins', sans-serif;font-weight:200;font-size:0.8em}.about-container .lower-section .stats-container .progress-bars-container .progress-bar .bar{position:relative;display:block;height:40%;border-radius:3px}.about-container .lower-section .stats-container .progress-bars-container .progress-bar .bar::before{position:absolute;content:'';display:block;height:100%;border-radius:3px;background-color:#247cf0;z-index:1}.about-container .lower-section .stats-container .progress-bars-container .progress-bar:nth-of-type(1) .bar::before{width:100%}.about-container .lower-section .stats-container .progress-bars-container .progress-bar:nth-of-type(2) .bar::before{width:66%}.about-container .lower-section .stats-container .progress-bars-container .progress-bar:nth-of-type(3) .bar::before{width:90%}.about-container .lower-section .stats-container .progress-bars-container .progress-bar:nth-of-type(4) .bar::before{width:75%}.about-container .lower-section .stats-container .progress-bars-container .progress-bar:nth-of-type(5) .bar::before{width:60%}.about-container .lower-section .stats-container .progress-bars-container .progress-bar:nth-of-type(6) .bar::before{width:80%}.about-container .lower-section .stats-container .number-box-container{position:relative;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;gap:1.5em;padding:5em 1.5em}.about-container .lower-section .stats-container .number-box-container .box{position:relative;width:15em;padding:2em 0;border-radius:3px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column nowrap;flex-flow:column nowrap}.about-container .lower-section .stats-container .number-box-container .box .icon{position:absolute;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;width:2.1em;height:2.1em;color:#fff;top:-25%;border-radius:50%;background-color:#247cf0;font-size:1.8em;z-index:1}.about-container .lower-section .stats-container .number-box-container .box h2{font-size:2em;font-family:'Roboto', sans-serif;font-weight:600}.about-container .lower-section .stats-container .number-box-container .box h4{font-family:'Roboto', sans-serif;font-weight:400;font-size:1em}.about-container .lower-section .clients-banner{position:relative;width:100%;padding:1.5em 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;gap:0.5em 7em}.about-container .lower-section .clients-banner img{width:5em;-webkit-transition:all 0.5s ease;transition:all 0.5s ease}.about-container .lower-section .clients-banner img:hover{-webkit-transform:scale(1.3);transform:scale(1.3)}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+/**for white text on dark background**/
+/**for black text on light background**/
+.about-container {
+  position: relative;
+  width: 100%;
+  padding-top: 4em;
+}
+
+.about-container .upper-section {
+  position: relative;
+  width: 100%;
+}
+
+.about-container .upper-section .intro {
+  position: relative;
+  width: 100%;
+  padding: 0 25em;
+  gap: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.about-container .upper-section .intro > span {
+  position: relative;
+  padding: 5px 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  border-radius: 20px;
+  background-color: rgba(16, 110, 234, 0.1);
+  color: #106EEA;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+}
+
+.about-container .upper-section .intro h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  text-align: center;
+}
+
+.about-container .upper-section .intro h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  font-size: 1em;
+  text-align: center;
+}
+
+.about-container .upper-section .intro {
+  margin-bottom: 2em;
+}
+
+.about-container .upper-section .about {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.about-container .upper-section .about img {
+  position: relative;
+  width: 33em;
+  height: 33em;
+  border-radius: 5px;
+}
+
+.about-container .upper-section .about .about-caption-container {
+  position: relative;
+  width: 33em;
+  height: 33em;
+  padding-left: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.about-container .upper-section .about .about-caption-container h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.about-container .upper-section .about .about-caption-container h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+
+.about-container .upper-section .about .about-caption-container .card {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.about-container .upper-section .about .about-caption-container .card span {
+  position: relative;
+  width: 3.4em;
+  height: 3.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  font-size: 1.3em;
+  border-radius: 50%;
+}
+
+.about-container .upper-section .about .about-caption-container .card .txt {
+  position: relative;
+  width: calc(100% - 3.5em);
+  padding: 0 1em;
+}
+
+.about-container .upper-section .about .about-caption-container .card .txt h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+}
+
+.about-container .upper-section .about .about-caption-container .card .txt p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.about-container .upper-section .about .about-caption-container .card:nth-of-type(1) {
+  margin-top: 4em;
+  margin-bottom: 1.25em;
+}
+
+.about-container .upper-section .about .about-caption-container .card:nth-of-type(2) {
+  margin-top: 1.25em;
+  margin-bottom: 4em;
+}
+
+.about-container .upper-section .about .about-caption-container p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.about-container .lower-section {
+  position: relative;
+  width: 100%;
+}
+
+.about-container .lower-section .stats-container {
+  position: relative;
+  width: 100%;
+  margin-top: 4em;
+}
+
+.about-container .lower-section .stats-container .progress-bars-container {
+  position: relative;
+  padding: 4em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 2em 2.5em;
+}
+
+.about-container .lower-section .stats-container .progress-bars-container .progress-bar {
+  position: relative;
+  width: 33em;
+  height: 2.5em;
+}
+
+.about-container .lower-section .stats-container .progress-bars-container .progress-bar .info {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 0.8em;
+}
+
+.about-container .lower-section .stats-container .progress-bars-container .progress-bar .bar {
+  position: relative;
+  display: block;
+  height: 40%;
+  border-radius: 3px;
+}
+
+.about-container .lower-section .stats-container .progress-bars-container .progress-bar .bar::before {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  background-color: #247cf0;
+  z-index: 1;
+}
+
+.about-container .lower-section .stats-container .progress-bars-container .progress-bar:nth-of-type(1) .bar::before {
+  width: 100%;
+}
+
+.about-container .lower-section .stats-container .progress-bars-container .progress-bar:nth-of-type(2) .bar::before {
+  width: 66%;
+}
+
+.about-container .lower-section .stats-container .progress-bars-container .progress-bar:nth-of-type(3) .bar::before {
+  width: 90%;
+}
+
+.about-container .lower-section .stats-container .progress-bars-container .progress-bar:nth-of-type(4) .bar::before {
+  width: 75%;
+}
+
+.about-container .lower-section .stats-container .progress-bars-container .progress-bar:nth-of-type(5) .bar::before {
+  width: 60%;
+}
+
+.about-container .lower-section .stats-container .progress-bars-container .progress-bar:nth-of-type(6) .bar::before {
+  width: 80%;
+}
+
+.about-container .lower-section .stats-container .number-box-container {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 1.5em;
+  padding: 5em 1.5em;
+}
+
+.about-container .lower-section .stats-container .number-box-container .box {
+  position: relative;
+  width: 15em;
+  padding: 2em 0;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.about-container .lower-section .stats-container .number-box-container .box .icon {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 2.1em;
+  height: 2.1em;
+  color: #fff;
+  top: -25%;
+  border-radius: 50%;
+  background-color: #247cf0;
+  font-size: 1.8em;
+  z-index: 1;
+}
+
+.about-container .lower-section .stats-container .number-box-container .box h2 {
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.about-container .lower-section .stats-container .number-box-container .box h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.about-container .lower-section .clients-banner {
+  position: relative;
+  width: 100%;
+  padding: 1.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 0.5em 7em;
+}
+
+.about-container .lower-section .clients-banner img {
+  width: 5em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.about-container .lower-section .clients-banner img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}

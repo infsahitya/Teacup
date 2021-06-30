@@ -1,1 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");@media only screen and (max-width: 1200px){.faq-container .intro{padding:0 15em}}@media only screen and (max-width: 900px){.faq-container .intro{padding:0 5em;gap:0.3em}.faq-container .intro h2{font-size:1.5em !important}.faq-container .intro h4{font-size:0.9em !important}.faq-container .clp-cards-container .card{width:35em}}@media only screen and (max-width: 700px){.faq-container .clp-cards-container .card{width:25em}.faq-container .clp-cards-container .card button{font-size:0.9em}.faq-container .clp-cards-container .card .content p{font-size:0.85em}}@media only screen and (max-width: 450px){.faq-container{padding:2em 0}.faq-container .intro{padding:0 1em}.faq-container .clp-cards-container .card{width:90vw}}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+/**for white text on dark background**/
+/**for black text on light background**/
+@media only screen and (max-width: 1200px) {
+  .faq-container .intro {
+    padding: 0 15em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .faq-container .intro {
+    padding: 0 5em;
+    gap: 0.3em;
+  }
+  .faq-container .intro h2 {
+    font-size: 1.5em !important;
+  }
+  .faq-container .intro h4 {
+    font-size: 0.9em !important;
+  }
+  .faq-container .clp-cards-container .card {
+    width: 35em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .faq-container .clp-cards-container .card {
+    width: 25em;
+  }
+  .faq-container .clp-cards-container .card button {
+    font-size: 0.9em;
+  }
+  .faq-container .clp-cards-container .card .content p {
+    font-size: 0.85em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .faq-container {
+    padding: 2em 0;
+  }
+  .faq-container .intro {
+    padding: 0 1em;
+  }
+  .faq-container .clp-cards-container .card {
+    width: 90vw;
+  }
+}
