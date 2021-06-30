@@ -212,7 +212,7 @@ body.light .portfolio .gallery .card .popup {
 }
 
 body.light .portfolio .gallery .card .popup h3, body.light .portfolio .gallery .card .popup h4, body.light .portfolio .gallery .card .popup button {
-  color: #000;
+  color: #000 !important;
 }
 
 body.light .team-container {

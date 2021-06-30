@@ -196,7 +196,7 @@ body.light{
                     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
                     
                     h3, h4, button{
-                        color: $black;
+                        color: $black !important;
                     }
                 }
             }
