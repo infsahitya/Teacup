@@ -1,0 +1,112 @@
+@import "../resets";
+
+@media only screen and (max-width: 1200px){
+    .link-container{
+        .link-box{
+            width: 14em !important;
+            padding: 0 1em !important; 
+        }
+        .social-box{
+            ul{
+                li{
+                    a{
+                        button{
+                            width: 2.2em !important;
+                            height: 2.2em !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copy-container{
+        column-gap: 10em !important;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .link-container{
+        .link-box{
+            width: 20em !important;
+            padding: 0 2em !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .footer{
+        .sub-container{
+            .form-box{
+                width: 25em;
+            }
+        }
+
+        .link-container{
+            padding: 0 0.9em !important;
+            .link-box{
+                padding: 0 !important;
+                width: 14em !important;
+                @include flexit(center, center, column);
+
+                h4{
+                    text-align: center;
+                }
+            }
+
+            .social-box{
+                ul{
+                    li{
+                        a{
+                            button{
+                                width: 2.1em !important;
+                                height: 2.1em !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .copy-container{
+            @include flexit(center, center, column);
+            row-gap: 0.1em;
+        }
+    }
+}
+
+@media only screen and (max-width: 476px){
+    .footer{
+        .link-container{
+            .link-box{
+                height: auto !important;
+                margin-bottom: 1.5em;
+            }
+            .link-box:nth-of-type(1){
+                margin-top: 1.5em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .footer{
+        .sub-container{
+            .form-box{
+                width: 90vw;
+                
+                form{
+                    input[type="submit"]{
+                        padding: 0.5em 0.5em;
+                    }
+                }
+            }
+        }
+
+        .link-container{
+            .link-box{
+                width: 16em !important;
+            }
+        }
+    }
+}
