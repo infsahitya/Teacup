@@ -1,0 +1,132 @@
+@import "../resets";
+
+.contact-container{
+    position: relative;
+    width: 100%;
+    padding: 4em 0;
+    @include introcss;
+
+    .contact-cards{
+        position: relative;
+        width: 100%;
+        @include flexit(center, center, column);
+        gap: 1.5em;
+        margin-top: 2em;
+
+        .card{
+            position: relative;
+            @include flexit(center, center, column, nowrap);
+            row-gap: 0.5em;
+            padding: 1.5em 0;
+
+            span{
+                position: relative;
+                display: block;
+                font-size: 1.8em;
+                width: 2em;
+                height: 2em;
+                @include flexit(center, center);
+                border-radius: 50%;
+            }
+
+            h2{
+                @include roboto(700);
+                font-size: 1.2em;
+                text-align: center;
+            }
+            h4{
+                @include opensans(400);
+                font-size: 1em;
+                text-align: center;
+            }
+        }
+        .wide-card{
+            width: 50%;
+        }
+        .small-card{
+            width: 25%;
+        }
+
+        .row{
+            position: relative;
+            @include flexit(center, center, row);
+            gap: 1.5em;
+            width: 70em;
+        }
+
+        .lower-row{
+            .map-card{
+                padding: 0 0 !important;
+                iframe{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .contact-form{
+                padding: 1.5em 2em;
+    
+                form{
+                    position: relative;
+                    width: 100%;
+                    @include flexit(center, center, row, wrap);
+                    row-gap: 1em;
+    
+                    input{
+                        position: relative;
+                        outline: none;
+                        background: transparent;
+                        padding: 0.8em 1em;
+                        @include opensans(400);
+                        font-size: 1em;
+    
+                        &:-webkit-autofill{
+                            transition: background-color 5000s ease-in-out 0s;
+                            -webkit-text-fill-color: #fff !important;
+                        }
+                    }
+
+                    div{
+                        display: block;
+                        width: 100%;
+                        @include flexit(center, center);
+                        gap: 1em;
+
+                        input[type="text"]{
+                            width: 50%;
+                        }
+                        input[type="email"]{
+                            width: 50%;
+                        }
+                    }
+                    input:nth-of-type(1){
+                        width: 100%;
+                    }
+                    textarea{
+                        position: relative;
+                        outline: none;
+                        background: transparent;
+                        padding: 0.8em 1em;
+                        @include opensans(400);
+                        font-size: 1em;
+                        width: 100%;
+                        height: 200px;
+                        resize: vertical;
+                    }
+                    input[type="submit"]{
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        background-color: lighten($bluecolor, 10%) !important;
+                        cursor: pointer;
+                        transition: all 0.5s ease;
+    
+                        &:hover{
+                            background-color: $bluecolor !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
