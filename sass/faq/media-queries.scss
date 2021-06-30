@@ -1,0 +1,67 @@
+@import "../resets";
+
+@media only screen and (max-width: 1200px){
+
+    .faq-container{
+        .intro{
+            padding: 0 15em;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 900px){
+    .faq-container{
+        .intro{
+            padding: 0 5em;
+            gap: 0.3em;
+
+            h2{
+                font-size: 1.5em !important;
+            }
+            h4{
+                font-size: 0.9em !important;
+            }
+        }
+
+        .clp-cards-container{
+            .card{
+                width: 35em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .faq-container{
+        .clp-cards-container{
+            .card{
+                width: 25em;
+
+                button{
+                    font-size: 0.9em;
+                }
+                .content{
+                    p{
+                        font-size: 0.85em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .faq-container{
+        padding: 2em 0;
+        .intro{
+            padding: 0 1em;
+        }
+
+        .clp-cards-container{
+            .card{
+                width: 90vw;
+            }
+        }
+    }
+}
