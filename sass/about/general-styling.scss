@@ -1,0 +1,245 @@
+@import "../resets";
+
+.about-container{
+    position: relative;
+    width: 100%;
+    padding-top: 4em;
+
+    .upper-section{
+        position: relative;
+        width: 100%;
+
+        @include introcss;
+        .intro{
+            margin-bottom: 2em;
+        }
+    
+        .about{
+            position: relative;
+            width: 100%;
+            @include flexit(center, center);
+    
+            img{
+                position: relative;
+                width: 33em;
+                height: 33em;
+                border-radius: 5px;
+            }
+    
+            .about-caption-container{
+                position: relative;
+                width: 33em;
+                height: 33em;
+                padding-left: 1.5em;
+                @include flexit(center, center, column, nowrap);
+                
+    
+                h2{
+                    @include roboto(600);
+                    font-size: 1.5em;
+                }
+                h4{
+                    @include opensans(300);
+                    font-size: 1em;
+                    font-style: italic;
+                    margin-top: 0.5em;
+                }
+    
+                .card{
+                    position: relative;
+                    width: 100%;
+                    @include flexit(center, center);
+    
+                    span{
+                        position: relative;
+                        width: 3.4em;
+                        height: 3.4em;
+                        @include flexit(center, center);
+                        font-size: 1.3em;
+                        
+                        border-radius: 50%;
+                    }
+    
+                    .txt{
+                        position: relative;
+                        width: calc(100% - 3.5em);
+                        padding: 0 1em;
+    
+                        h3{
+                            @include roboto(500);
+                            font-size: 1.1em;
+                            margin-bottom: 0.3em;
+                        }
+                        p{
+                            @include opensans(300);
+                            font-size: 1em;
+                        }
+                    }
+    
+                    
+                }
+                .card:nth-of-type(1){
+                    margin-top: 4em;
+                    margin-bottom: 1.25em;
+                }
+                .card:nth-of-type(2){
+                    margin-top: 1.25em;
+                    margin-bottom: 4em;
+                }
+                
+                p{
+                    @include opensans(300);
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+    .lower-section{
+        position: relative;
+        width: 100%;
+
+        .stats-container{
+            position: relative;
+            width: 100%;
+            margin-top: 4em;
+
+            .progress-bars-container{
+                position: relative;
+                padding: 4em 0;
+                @include flexit(center, center, row, wrap);
+                gap: 2em 2.5em;
+        
+                .progress-bar{
+                    position: relative;
+                    width: 33em;
+                    height: 2.5em;
+        
+                    .info{
+                        position: relative;
+                        width: 100%;
+                        height: 60%;
+                        @include flexit(center, space-between, row);
+                        @include poppins(200);
+                        font-size: 0.8em;
+                    }
+                    .bar{
+                        position: relative;
+                        display: block;
+                        height: 40%;
+                        border-radius: 3px;
+        
+                        &::before{
+                            position: absolute;
+                            content: '';
+                            display: block;
+                            height: 100%;
+                            border-radius: 3px;
+                            background-color: lighten($bluecolor, 5%);
+                            z-index: 1;
+                        }
+                    }
+                }
+        
+                .progress-bar:nth-of-type(1){
+                    .bar{
+                        &::before{
+                            width: 100%;
+                        }
+                    }
+                }
+                .progress-bar:nth-of-type(2){
+                    .bar{
+                        &::before{
+                            width: 66%;
+                        }
+                    }
+                }
+                .progress-bar:nth-of-type(3){
+                    .bar{
+                        &::before{
+                            width: 90%;
+                        }
+                    }
+                }
+                .progress-bar:nth-of-type(4){
+                    .bar{
+                        &::before{
+                            width: 75%;
+                        }
+                    }
+                }
+                .progress-bar:nth-of-type(5){
+                    .bar{
+                        &::before{
+                            width: 60%;
+                        }
+                    }
+                }
+                .progress-bar:nth-of-type(6){
+                    .bar{
+                        &::before{
+                            width: 80%;
+                        }
+                    }
+                }
+        
+            }
+
+            .number-box-container{
+                position: relative;
+                width: 100%;
+                @include flexit(center, center, row, wrap);
+                gap: 1.5em;
+                padding: 5em 1.5em;
+
+                .box{
+                    position: relative;
+                    width: 15em;
+                    padding: 2em 0;
+                    border-radius: 3px;
+                    @include flexit(center, center, column, nowrap);
+
+                    .icon{
+                        position: absolute;
+                        @include flexit(center, center);
+                        width: 2.1em;
+                        height: 2.1em;
+                        color: #fff;
+                        top: -25%;   
+                        border-radius: 50%;
+                        background-color: lighten($bluecolor, 5%);
+                        font-size: 1.8em;
+                        z-index: 1;
+                    }
+
+                    h2{
+                        font-size: 2em;
+                        @include roboto(600);
+                    }
+                    h4{
+                        @include roboto(400);
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        .clients-banner{
+            position: relative;
+            width: 100%;
+            padding: 1.5em 0;
+            @include flexit(center, center, row, wrap);
+            gap: 0.5em 7em;
+
+            img{
+                width: 5em;
+                transition: all 0.5s ease;
+
+                &:hover{
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+}
