@@ -1,0 +1,339 @@
+@import "../resets";
+
+body.dark{
+    background-color: $darkbg;
+
+    .header{
+        background-color: $darkbg;
+
+        .title{
+            h1{
+                color: $white;
+            }
+        }
+
+        .menu{
+            .nav-link{
+                color: $white;
+            }
+            .nav-link.active{
+                color: $bluecolor;
+            }
+        }
+
+        button{
+            color: $white;
+        }
+    }
+
+    .smaller-menu-container{
+        .smaller-menu-wrapper{
+            background-color: $subdarkbg;
+
+            #menu-close-btn{
+                color: $white;
+            }
+
+            .section-links{
+                a{
+                    color: $white;
+                    background-color: $darkbg;
+                    border-top: 1px solid lighten($darkbg, 10%);
+                    border-bottom: 1px solid lighten($darkbg, 10%);
+                }
+                a:first-of-type{
+                    border-top: none;
+                }
+                a:last-of-type{
+                    border-bottom: none;
+                }
+            }
+            .footer{
+                color: $white;
+                h3{
+                    a{
+                        color: lighten($bluecolor, 10%);
+                    }
+                }
+            }
+        }
+    }
+
+
+    .dark-light-switch{
+        background-color: lighten($subdarkbg, 10%);
+        color: $white;
+    }
+
+    .home-container{
+        .intro-text{
+            h1{
+                color: $white;
+                
+                span{
+                    color: lighten($bluecolor, 5%);
+                }
+            }
+            h3{
+                color: lighten($darkbg, 40%);
+            }
+        }
+        .intro-btns{
+            a:first-child + a{
+                button{
+                    color: $white;
+
+                    &:hover{
+                        color: lighten($bluecolor, 10%);
+                    }
+                }
+            }
+        }
+    }
+
+    .home-cards-container{
+        .card{
+            color: #fff;
+            background-color: $subdarkbg;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+
+
+    .about-container{
+        background-color: $subdarkbg;
+
+        .upper-section{
+            @include darkmode_introcss;
+            .about{
+                .about-caption-container{
+                    color: #fff;
+
+                    .card{
+                        span{
+                            background-color: $darkbg;
+                            color: lighten($bluecolor, 10%);
+                            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5),
+                                    0 5px 30px -5px rgba(16, 110, 234, 0.5);
+                        }
+                    }
+                }
+            }
+        }
+        .lower-section{
+            .stats-container{
+                .progress-bars-container{
+                    background: $darkbg;
+    
+                    .progress-bar{
+                        .info{
+                            color: $white;
+                        }
+                        .bar{
+                            background-color: lighten($subdarkbg, 5%);
+                        }
+                    }
+                }
+                .number-box-container{
+                    background-color: $darkbg;
+    
+                    .box{
+                        box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.5);
+                        background-color: lighten($subdarkbg, 5%);
+    
+                        .icon{
+                            border: 5px solid $darkbg;
+                        }
+                        h2{
+                            color: $white;
+                        }
+                        h4{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            .clients-banner{
+                background-color: #b7d4fa;
+            }
+        }
+    }
+
+
+    .service-container{
+        @include darkmode_introcss;
+        .cards-container{
+            .card{
+                color: $white;
+                span{
+                    background-color: lighten($subdarkbg, 5%);
+                    border: 1px solid lighten($subdarkbg, 5%);
+                }
+            }
+        }
+    }
+
+    .portfolio{
+        @include darkmode_introcss;
+        .gallery-navigation-btns{
+            .gnb{
+                color: $white;
+            }
+        }
+        .gallery{
+            .card{
+                .popup{
+                    background-color: rgba($darkbg, 0.9);
+                    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+                    
+                    h3, h4, button{
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .team-container{
+        background-color: $subdarkbg;
+        @include darkmode_introcss;
+        .team-gallery{
+            .card{
+                .info{
+                    background-color: $darkbg;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .price-container{
+        @include darkmode_introcss;
+
+        .price-cards{
+            .card{
+                box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.1);
+
+                .head{
+                    background-color: $subdarkbg;
+                    color: darken(#fff, 20%);
+                }
+                .list{
+                    h2{
+                        color: darken($white, 10%);
+
+                        span{
+                            color: lighten($bluecolor, 10%);
+                        }
+                    }
+                    h4{
+                        color: darken(#fff, 20%);
+                    }
+                }
+                .foot{
+                    background-color: $subdarkbg;
+                }
+            }
+        }
+    }
+
+    .faq-container{
+        background-color: $subdarkbg;
+        @include darkmode_introcss;
+
+        .clp-cards-container{
+            .card{
+                button{
+                    color: $white;
+                }
+                .content{
+                    background: transparent;
+                    color: $white;
+                    border-bottom: 1px solid lighten($subdarkbg, 10%);
+                }
+            }
+        }
+    }
+
+    .contact-container{
+        @include darkmode_introcss;
+        .contact-cards{
+            .card{
+                background-color: $subdarkbg;
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+                span{
+                    color: lighten($bluecolor, 10%);
+                    border: 2px solid lighten($bluecolor, 30%);
+                }
+                h2, h4{
+                    color: darken(#fff, 10%);
+                }
+            }
+
+            .lower-row{
+                .map-card{
+                    box-shadow: none;
+                }
+                .contact-form{
+                    form{
+                        input, textarea{
+                            border: 1px solid lighten($subdarkbg, 15%);
+                            color: $white;
+                        }
+                        input[type="submit"]{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer{
+        .sub-container{
+            background-color: $subdarkbg;
+
+            h2{
+                color: $white;
+            }
+            h4{
+                color: $white;
+            }
+        }
+        .link-container{
+            .link-box{
+                h2{
+                    color: $white;
+                }
+                h4{
+                    color: $white;
+                }
+                h3{
+                    color: $white;
+                }
+                ul{
+                    li{
+                        a{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        .copy-container{
+            background-color: $subdarkbg;
+
+            h4{
+                color: $white;
+                a{
+                    color: lighten($bluecolor, 15%);
+                }
+            }
+        }
+
+    }
+}
