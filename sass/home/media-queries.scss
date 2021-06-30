@@ -1,0 +1,104 @@
+@import "../resets";
+
+@media only screen and (max-width: 900px){
+    .home-container{
+        @include flexit(center, center);
+
+        .intro-text{
+            width: 100%;
+            padding: 0;
+            
+            h1{
+                text-align: center;
+            }
+            h3{
+                text-align: center;
+            }
+            .intro-btns{
+                @include flexit(center, center);
+            }
+        }
+
+        .video-modal{
+            iframe{
+                width: 90vw;
+            }
+        }
+    }
+
+    .home-cards-container{
+        padding: 3em 3em;
+        .card{
+            width: 13em;
+            height: 13em;
+            
+            i{
+                font-size: 2.2em;
+            }
+            h3{
+                font-size: 1em;
+            }
+            p{
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .home-container{
+        .intro-text{
+            padding: 0 1em;
+            h1{
+                font-size: 2.3em;
+            }
+            h3{
+                font-size: 1.2em;
+            }
+        }
+        .intro-btns{
+            a{
+                font-size: 0.8em;
+            }
+        }
+    }
+
+    .home-cards-container{
+        .card{
+            width: 12em;
+            height: 12em;
+            padding: 0 1.5em;
+            row-gap: 0.5em;
+
+            i{
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .home-container{
+        .intro-text{
+            h1{
+                font-size: 2em;
+            }
+            h3{
+                font-size: 1em;
+            }
+        }
+        .video-modal{
+            iframe{
+                height: 20em;
+            }
+        }
+        .intro-btns{
+            margin-top: 1em !important;
+            flex-direction: column !important;
+            row-gap: 1em;
+            a{
+                margin: 0 !important;
+            }
+        }
+    }
+}
