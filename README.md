@@ -1,1 +1,1 @@
-# TEACUP-template
+# TeaCup
