@@ -1,0 +1,56 @@
+@import "../resets";
+
+.faq-container{
+    position: relative;
+    width: 100%;
+    padding: 4em 0;
+
+    @include introcss;
+
+    .clp-cards-container{
+        position: relative;
+        width: 100%;
+        margin-top: 2em;
+        @include flexit(center, center, column);
+
+        .card{
+            position: relative;
+            width: 50em;
+            @include flexit(flex-start, center, column);
+
+            button{
+                outline: none;
+                border: none;
+                background: transparent;
+                width: 100%;
+                text-align: left;
+                padding: 1em 1em;
+                font-size: 1em;
+                @include opensans(400);
+                cursor: pointer;
+                background: transparent;
+
+                i{
+                    font-size: 1.2em;
+                    margin-right: 0.5em;
+                    transition: all 0.3s ease;
+                    clear: both;
+                }
+            }
+
+            .content{
+                position: relative;
+                width: 100%;
+                @include opensans(400);
+                max-height: 0;
+                transition: all 0.5s ease;
+                overflow: hidden;
+                
+                p{
+                    font-size: 1em;
+                    margin: 1em 1em;
+                }
+            }
+        }
+    }
+}
