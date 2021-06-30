@@ -1,0 +1,343 @@
+@import "../resets";
+
+body.light{
+    background-color: $lightbg;
+
+    .header{
+        background-color: $lightbg;
+
+        .title{
+            h1{
+                color: $black;
+            }
+        }
+
+        .menu{
+            .nav-link{
+                color: $black;
+            }
+            .nav-link.active{
+                color: $bluecolor;
+            }
+        }
+
+        button{
+            color: $black;
+        }
+    }
+
+    .smaller-menu-container{
+        .smaller-menu-wrapper{
+            background-color: darken($sublightbg, 5%);
+
+            #menu-close-btn{
+                color: $black;
+            }
+
+            .section-links{
+                a{
+                    color: $black;
+                    background-color: $lightbg;
+                    border-top: 1px solid lighten($darkbg, 50%);
+                    border-bottom: 1px solid lighten($darkbg, 50%);
+                }
+                a:first-of-type{
+                    border-top: none;
+                }
+                a:last-of-type{
+                    border-bottom: none;
+                }
+            }
+            .footer{
+                color: $black;
+                h3{
+                    a{
+                        color: $bluecolor;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .dark-light-switch{
+        background-color: $lightbg;
+        color: lighten($black, 20%);
+    }
+
+    .up-slide-btn{
+        background-color: darken($sublightbg, 5%);
+        color: lighten($black, 20%);
+    }
+
+    .home-container{
+        .intro-text{
+            h1{
+                color: $black;
+                
+                span{
+                    color: $bluecolor;
+                }
+            }
+            h3{
+                color: lighten($darkbg, 15%);;
+            }
+        }
+        .intro-btns{
+            a:first-child + a{
+                button{
+                    color: $black;
+
+                    &:hover{
+                        color: $bluecolor;
+                    }
+                }
+            }
+        }
+    }
+
+    .home-cards-container{
+        background-color: $lightbg;
+        .card{
+            color: lighten($darkbg, 15%);
+            background-color: $lightbg;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+
+
+    .about-container{
+        background-color: darken($sublightbg, 2%);
+
+        .upper-section{
+            @include lightmode_introcss;
+            .about{
+                .about-caption-container{
+                    color: lighten($darkbg, 15%);
+
+                    .card{
+                        span{
+                            background-color: $lightbg;
+                            color: $bluecolor;
+                            box-shadow: 0 5px 30px -5px rgba(16, 110, 234, 0.5);
+                        }
+                    }
+                }
+            }
+        }
+        .lower-section{
+            .stats-container{
+                .progress-bars-container{
+                    background-color: $lightbg;
+    
+                    .progress-bar{
+                        .info{
+                            color: lighten($darkbg, 15%);
+                        }
+                        .bar{
+                            background-color: lighten($bluecolor, 43%);
+                        }
+                    }
+                }
+                .number-box-container{
+                    background-color: $lightbg;
+    
+                    .box{
+                        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+                        background-color: darken($sublightbg, 2%);
+    
+                        .icon{
+                            border: 5px solid $lightbg;
+                        }
+                        h2{
+                            color: lighten($darkbg, 15%);
+                        }
+                        h4{
+                            color: lighten($darkbg, 15%);
+                        }
+                    }
+                }
+            }
+            .clients-banner{
+                background-color: darken($sublightbg, 2%);
+            }
+        }
+    }
+
+
+    .service-container{
+        @include lightmode_introcss;
+        .cards-container{
+            .card{
+                color: lighten($darkbg, 15%);
+                span{
+                    background-color: $sublightbg;
+                    border: 1px solid darken($sublightbg, 6%);
+                }
+            }
+        }
+    }
+
+    .portfolio{
+        @include lightmode_introcss;
+        .gallery-navigation-btns{
+            .gnb{
+                color: $black;
+            }
+        }
+        .gallery{
+            .card{
+                .popup{
+                    background-color: rgba($white, 0.9);
+                    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+                    
+                    h3, h4, button{
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+
+    .team-container{
+        background-color: darken($sublightbg, 2%);
+        @include lightmode_introcss;
+        .team-gallery{
+            .card{
+                .info{
+                    background-color: $white;
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    .price-container{
+        @include lightmode_introcss;
+
+        .price-cards{
+            .card{
+                box-shadow: 0 0 7px 0 rgba(darken($white, 8%), 1);
+                .head{
+                    background-color: darken($white, 8%);
+                    color: lighten($darkbg, 15%);
+                }
+                .list{
+                    h2{
+                        color: darken(#fff, 50%);
+                        span{
+                            color: $bluecolor;
+                        }
+                    }
+                    h4{
+                        color: darken(#fff, 80%);
+                    }
+                }
+                .foot{
+                    background-color: darken($white, 8%);
+                }
+            }
+        }
+    }
+
+    .faq-container{
+        background-color: darken($sublightbg, 2%);
+        @include lightmode_introcss;
+
+        .clp-cards-container{
+            .card{
+                button{
+                    color: lighten($darkbg, 15%);
+                }
+                .content{
+                    background: transparent;
+                    color: lighten($darkbg, 15%);
+                    border-bottom: 1px solid darken($sublightbg, 10%);
+                }
+            }
+        }
+    }
+
+    .contact-container{
+        @include lightmode_introcss;
+        .contact-cards{
+            .card{
+                background: transparent;
+                box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.07);
+                span{
+                    color: $bluecolor;
+                    border: 2px solid $bluecolor;
+                }
+                h2, h4{
+                    color: lighten($darkbg, 15%);
+                }
+            }
+
+            .lower-row{
+                .map-card{
+                    box-shadow: none;
+                }
+                .contact-form{
+                    form{
+                        input, textarea{
+                            border: 1px solid darken($white, 15%);
+                            color: lighten($darkbg, 15%);
+                        }
+                        input[type="submit"]{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer{
+
+        .sub-container{
+            background-color: darken($sublightbg, 2%);
+
+            h2{
+                color: lighten($darkbg, 15%);
+            }
+            h4{
+                color: lighten($darkbg, 15%);
+            }
+        }
+        .link-container{
+            .link-box{
+                h2{
+                    color: lighten($darkbg, 15%);
+                }
+                h4{
+                    color: lighten($darkbg, 15%);
+                }
+                h3{
+                    color: lighten($darkbg, 15%);
+                }
+                ul{
+                    li{
+                        a{
+                            color: lighten($darkbg, 15%);
+                        }
+                    }
+                }
+            }
+        }
+        .copy-container{
+            background-color: darken($sublightbg, 2%);
+
+            h4{
+                color: lighten($darkbg, 15%);
+                a{
+                    color: $bluecolor;
+                }
+            }
+        }
+
+    }
+}
