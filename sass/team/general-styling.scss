@@ -1,0 +1,92 @@
+@import "../resets";
+
+.team-container{
+    position: relative;
+    width: 100%;
+    padding: 4em 0;
+    @include flexit(center, center, column);
+    @include introcss;
+
+    .team-gallery{
+        position: relative;
+        width: 100%;
+        @include flexit(center, center, row, wrap);
+        gap: 1.5em;
+        margin-top: 2em;
+        padding: 0 2em;
+
+        .card{
+            position: relative;
+            width: 16em;
+            @include flexit(center, center, column, nowrap);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px 0 rgba(lighten($bluecolor, 10%), 0.3);
+
+            img{
+                position: relative;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+
+            .info{
+                position: relative;
+                width: 100%;
+                padding: 1.5em 1em;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                z-index: 1;
+
+                h2{
+                    @include roboto(700);
+                    font-size: 1.1em;
+                }
+                h3{
+                    @include roboto(400);
+                    font-size: 0.9em;
+                }
+            }
+
+            .btns-container{
+                position: absolute;
+                bottom: 15%;
+                width: 100%;
+                opacity: 0;
+                @include flexit(center, center);
+                column-gap: 1em;
+                transition: all 0.5s ease;
+
+                a{
+                    display: block;
+                    text-decoration: none;
+
+                    button{
+                        outline: none;
+                        border: none;
+                        background-color: rgba($bluecolor, 0.6);
+                        color: #fff;
+                        font-size: 1em;
+                        width: 2.5em;
+                        height: 2.5em;
+                        border-radius: 5px;
+                        transition: all 0.3s ease;
+                        cursor: pointer;
+
+                        &:hover{
+                            background-color: rgba($bluecolor, 1);
+                        }
+                    }
+                }
+            }
+
+            &:hover{
+                .btns-container{
+                    opacity: 1;
+                    bottom: 25%;
+                }
+            }
+        }
+    }
+}
