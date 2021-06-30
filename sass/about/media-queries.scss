@@ -1,0 +1,184 @@
+@import "../resets";
+
+@media only screen and (min-width: 1201px){
+
+}
+
+@media only screen and (max-width: 1200px){
+
+    .about-container{
+        .upper-section{
+            .intro{
+                padding: 0 15em;
+            }
+            .about{
+                img{
+                    width: 25em;
+                    height: 25em;
+                }
+            }
+            .about-caption-container{
+                width: 25em !important;
+                height: 25em !important;
+
+                h2{
+                    font-size: 1.1em !important;
+                }
+                h4{
+                    font-size: 0.9em  !important;
+                }
+
+                .card{
+                    span{
+                        width: 3em !important;
+                        height: 3em !important;
+                        font-size: 1.1em !important;
+                    }
+
+                    .txt{
+                        padding: 0 0.7em !important;
+
+                        h3{
+                            font-size: 1em !important;
+                        }
+                        p{
+                            font-size: 0.9em !important;
+                        }
+                    }
+                }
+
+                .card:nth-of-type(1){
+                    margin-top: 0.5em !important;
+                    margin-bottom: 0.5em !important;
+                }
+                .card:nth-of-type(2){
+                    margin-top: 0.5em !important;
+                    margin-bottom: 0.5em !important;
+                }
+
+                p{
+                    font-size: 0.9em !important;
+                }
+            }
+        }
+
+        .lower-section{
+            .stats-container{
+                .progress-bars-container{
+                    .progress-bar{
+                        width: 25em;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 900px){
+
+    .about-container{
+        .upper-section{
+            .intro{
+                padding: 0 5em;
+                gap: 0.3em;
+                h2{
+                    font-size: 1.5em !important;
+                }
+                h4{
+                    font-size: 0.9em;
+                }
+            }
+            .about{
+                @include flexit(center, center, column);
+
+                .about-caption-container{
+                    padding-top: 1em;
+                }
+            }
+        }
+
+        .lower-section{
+            .stats-container{
+                .progress-bars-container{
+                    @include flexit(center, center, column);
+                    .progress-bar{
+                        width: 25em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    .about-container{
+        .lower-section{
+            .stats-container{
+                .number-box-container{
+                    padding: 2.5em;
+                    .box{
+                        width: 12em;
+
+                        .icon{
+                            font-size: 1.6em;
+                        }
+
+                        h2{
+                            font-size: 1.6em;
+                        }
+                        h4{
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
+
+            .clients-banner{
+                img{
+                    width: 4em;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+
+    .about-container{
+        padding: 2em 0 0 0;
+        .upper-section{
+            .intro{
+                padding: 0 1em;
+                margin-bottom: 1em;
+            }
+            .about{
+                img{
+                    width: 90vw;
+                    height: 90vw;
+                }
+
+                .about-caption-container{
+                    padding: 10px 0 0 0;
+                    width: 90vw !important;
+                    height: auto !important;
+                }
+            }
+        }
+
+        .lower-section{
+            .stats-container{
+                margin-top: 2em;
+                .progress-bars-container{
+                    padding: 2em 0;
+                    .progress-bar{
+                        width: 90vw;
+                    }
+                }
+            }
+        }
+    }
+
+}
