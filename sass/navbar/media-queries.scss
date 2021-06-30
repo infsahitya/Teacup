@@ -1,0 +1,38 @@
+@import "../resets";
+
+@media only screen and (min-width: 1201px){
+
+}
+
+@media only screen and (max-width: 1200px){
+    .header{
+        column-gap: 5em;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .header{
+        height: 4.5em !important;
+        @include flexit(center, flex-start);
+
+        .title{
+            margin: 0 2em;
+        }
+        .menu{
+            display: none;
+        }
+
+        .ham-btn{
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .header{
+        height: 4em !important;
+        .title{
+            font-size: 0.8em;
+        }
+    }
+}
