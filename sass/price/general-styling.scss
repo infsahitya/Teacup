@@ -1,0 +1,117 @@
+@import "../resets";
+
+.price-container{
+    position: relative;
+    padding: 4em 0;
+    width: 100%;
+
+    @include introcss;
+
+    .price-cards{
+        position: relative;
+        width: 100%;
+        @include flexit(center, center, row, wrap);
+        gap: 1.5em;
+        margin-top: 2em;
+        padding: 0 2em;
+
+        .card{
+            position: relative;
+            width: 16em;
+            @include flexit(center, center, column, nowrap);
+            border-radius: 7px;
+            overflow: hidden;
+
+            .head{
+                position: relative;
+                width: 100%;
+                padding: 1.5em 0;
+                @include roboto(500);
+                @include flexit(center, center);
+                border-top-left-radius: 7px;
+                border-top-right-radius: 7px;
+            }
+
+            .list{
+                position: relative;
+                width: 100%;
+                @include flexit(center, center, column);
+                row-gap: 1em;
+                background: transparent;
+
+                h2{
+                    @include poppins(300);
+                    font-size: 1em;
+                    margin: 1em 0 0 0;
+
+                    span{
+                        font-size: 2em;
+                    }
+                }
+
+                h4{
+                    @include opensans(300);
+                    font-size: 1em;
+                    
+                    &:last-child{
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+
+            .foot{
+                position: relative;
+                width: 100%;
+                padding: 1.5em 0;
+                @include flexit(center, center);
+                border-bottom-left-radius: 7px;
+                border-bottom-right-radius: 7px;
+
+                a{
+                    display: block;
+                    text-decoration: none;
+
+                    button{
+                        outline: none;
+                        border: none;
+                        background-color: lighten($bluecolor, 10%);
+                        @include roboto(300);
+                        font-size: 1em;
+                        color: #fff;
+                        padding: 0.6em 1.8em;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+
+                        &:hover{
+                            background-color: $bluecolor;
+                        }
+                    }
+                }
+            }
+
+            &.affordable-choice{
+                .head{
+                    background-color: $bluecolor !important;
+                    color: $white !important;
+                }
+            }
+        }
+
+        .card:last-of-type{
+            .label{
+                background-color: $bluecolor;
+                display: block;
+                position: absolute;
+                padding: 0.3em 10em;
+                @include roboto(300);
+                color: $white;
+                font-size: 0.7em;
+                transform: rotate(40deg);
+                top: 4%;
+                right: -37%;
+                z-index: 10;
+            }
+        }
+    }
+}
