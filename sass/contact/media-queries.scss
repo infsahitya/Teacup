@@ -1,0 +1,113 @@
+@import "../resets";
+
+@media only screen and (max-width: 1200px){
+    .contact-container{
+        .intro{
+            padding: 0 15em;
+        }
+
+        .contact-cards{
+            .row{
+                width: 52em;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 900px){
+    .contact-container{
+        .intro{
+            padding: 0 5em;
+            gap: 0.3em;
+
+            h2{
+                font-size: 1.5em !important;
+            }
+            h4{
+                font-size: 0.9em !important;
+            }
+        }
+
+        .contact-cards{
+            .upper-row{
+                width: 92.5vw;
+                flex-wrap: wrap !important;
+                
+                div:nth-of-type(1){
+                    width: 100%;
+                }
+                div:nth-of-type(2){
+                    width: 48%;
+                }
+                div:nth-of-type(3){
+                    width: 48%;
+                }
+            }
+
+            .lower-row{
+                width: 92.5vw;
+                flex-wrap: wrap !important;
+
+                .map-card{
+                    width: 100%;
+                }
+                .contact-form{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    .contact-container{
+        .contact-cards{
+            .upper-row{
+                .card{
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+    .contact-container{
+        padding: 2em 0;
+        .intro{
+            padding: 0 1em;
+        }
+
+        .contact-cards{
+            gap: 0.5em;
+
+            .card{
+                h2{
+                    font-size: 1.1em;
+                }
+                h4{
+                    font-size: 0.9em;
+                }
+            }
+            .upper-row{
+                gap: 0.5em;
+            }
+            .lower-row{
+                gap: 0.5em;
+                .contact-form{
+                    form{
+                        .name-email{
+                            flex-direction: column !important;
+                            input{
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
