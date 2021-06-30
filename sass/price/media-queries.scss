@@ -1,0 +1,60 @@
+@import "../resets";
+
+@media only screen and (max-width: 1200px){
+    .price-container{
+        .intro{
+            padding: 0 15em;
+        }
+
+        .price-cards{
+            .card{
+                .list{
+                    row-gap: 0.7em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .price-container{
+        .intro{
+            padding: 0 5em;
+            gap: 0.3em;
+
+            h2{
+                font-size: 1.5em !important;
+            }
+            h4{
+                font-size: 0.9em !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .price-container{
+        .price-cards{
+            .card{
+                .head{
+                    padding: 1em 0;
+                }
+                .list{
+                    row-gap: 0.5em;
+                }
+                .foot{
+                    padding: 1em 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .price-container{
+        padding: 2em 0;
+        .intro{
+            padding: 0 1em;
+        }
+    }
+}
