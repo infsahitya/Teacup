@@ -1,0 +1,135 @@
+@import "../resets";
+
+.service-container{
+    position: relative;
+    width: 100%;
+
+    .upper-section{
+        position: relative;
+        width: 100%;
+        padding: 4em 0;
+        @include introcss;
+        .intro{
+            margin-bottom: 2em;
+        }
+        
+        .cards-container{
+            position: relative;
+            width: 100%;
+            @include flexit(center, center, row, wrap);
+            gap: 2em;
+            padding: 0 2em;
+
+            .card{
+                position: relative;
+                width: 21em;
+                height: 21em;
+                border: 0.01em solid rgba(lighten($bluecolor, 30%), 0.5);
+                border-radius: 1px;
+                @include flexit(center, center, column, nowrap);
+                row-gap: 1em;
+                transition: all 0.3s ease;
+
+                span{
+                    position: relative;
+                    font-size: 1.8em;
+                    width: 2.5em;
+                    height: 2.5em;
+                    border-radius: 5px;
+                    @include flexit(center, center);
+                    color: lighten($bluecolor, 10%);
+                    transition: all 0.3s ease;
+                }
+
+                h2{
+                    @include roboto(500);
+                    font-size: 1.7em;
+                    transition: all 0.3s ease;
+                }
+                p{
+                    @include opensans(400);
+                    font-size: 1em;
+                    text-align: center;
+                }
+
+                &:hover{
+                    border: 1px solid transparent;
+                    box-shadow: 0 5px 30px 0 rgba(lighten($bluecolor, 10%), 0.3);
+
+                    span{
+                        border: 1px solid lighten($bluecolor, 10%);
+                    }
+                    h2{
+                        color: lighten($bluecolor, 10%);
+                    }
+                }
+            }
+        }
+    }
+
+    .lower-section{
+        position: relative;
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../img/services/slider-bg/bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 4em 0;
+
+        .splide__arrows{
+            display: none;
+        }
+        .splide__pagination{
+            position: relative;
+            bottom: 0;
+            margin-top: 1em;
+
+            .splide__pagination__page{
+                background-color: rgba(255, 255, 255, 0.8);
+            }
+            .splide__pagination__page.is-active{
+                background-color:lighten($bluecolor, 5%);
+            }
+        }
+
+        .splide__slide{
+            width: 100%;
+            padding: 0 12em;
+            @include flexit(center, center, column, nowrap);
+
+            .profile{
+                position: relative;
+                @include flexit(center, center, column, nowrap);
+
+                img{
+                    position: relative;
+                    border-radius: 50%;
+                    border: 5px solid rgba(255, 255, 255, 0.4);
+                    width: 6.5em;
+                    height: 6.5em;
+                }
+
+                h2{
+                    @include roboto(700);
+                    font-size: 1.5em;
+                    color: #fff;
+
+                }
+                h4{
+                    @include roboto(400);
+                    font-size: 1em;
+                    color: #fff;
+
+                }
+            }
+
+            p{
+                color: #fff;
+                @include opensans(300);
+                font-style: italic;
+                text-align: center;
+                margin-top: 0.7em;
+            }
+        }
+    }
+}
