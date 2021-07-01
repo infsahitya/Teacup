@@ -32,12 +32,12 @@ var home_container = document.getElementById("home-container");
 darkmodebtn.addEventListener("click", function () {
     if (web_body.className == "light") {
         web_body.className = "dark";
-        home_container.style.backgroundImage = "url('../img/home/dark-background.jpg')";
+        home_container.style.backgroundImage = "url('img/home/dark-background.jpg')";
         home_container.style.backgroundPosition = "center";
     }
     else {
         web_body.className = "light";
-        home_container.style.backgroundImage = "url('../img/home/light-background.jpg')";
+        home_container.style.backgroundImage = "url('img/home/light-background.jpg')";
         home_container.style.backgroundPosition = "center";
     }
 });
