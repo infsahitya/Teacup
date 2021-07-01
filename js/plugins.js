@@ -38,7 +38,7 @@ darkmodebtn.addEventListener("click", function () {
     else {
         web_body.className = "light";
         home_container.style.backgroundImage = "url('img/home/light-background.jpg')";
-        home_container.style.backgroundPosition = "center";
+        home_container.style.backgroundPosition = "right";
     }
 });
 
